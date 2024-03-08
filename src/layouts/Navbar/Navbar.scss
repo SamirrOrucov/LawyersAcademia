@@ -1,0 +1,212 @@
+.navbar_container {
+  .navbar_upside_bg {
+    max-width: 100%;
+    background-color: #262626;
+    padding: 3px 0px;
+    .navbar_upside {
+      max-width: 98%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      background-color: #262626;
+      align-items: center;
+      &_img {
+        width: 30px;
+        object-fit: contain;
+      }
+      &_flag {
+        width: 50px;
+        object-fit: contain;
+      }
+      &_text {
+        color: lightgray;
+        font-size: 14px;
+      }
+    }
+  }
+  .navbar {
+    max-width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+    .navbar_navmenu {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      li {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        transition: 300ms;
+        color: #262626;
+        font-weight: 600;
+        &:hover {
+          color: #0176ff;
+        }
+      }
+    }
+    &_login_lang {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      .navbar_lang {
+        position: relative;
+        .select-header {
+          border: 1px solid gray;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 4px 5px;
+          cursor: pointer;
+          color: gray;
+          width: 95px;
+          font-size: 14px;
+
+          .fa-angle-down {
+            font-size: 12px;
+            padding-top: 3px;
+          }
+          .fa-angle-up {
+            font-size: 12px;
+            padding-top: 3px;
+          }
+        }
+        .navbar_select {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          width: 95px;
+          .navbar_option {
+            padding: 7px;
+            cursor: pointer;
+            color: white;
+            width: 95px;
+            background-color: #262626;
+            transition: 300ms;
+            font-size: 15px;
+            border-bottom: 1px solid rgba(97, 97, 97, 0.712);
+            &:hover {
+              color: #0176ff;
+            }
+          }
+        }
+      }
+      .navbar_login {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        padding: 5px;
+        background-color: #0176ff;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        .fa-user {
+          font-size: 12px;
+        }
+      }
+      .fa-bars {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar_container {
+    .navbar_upside_bg {
+      max-width: 100%;
+      background-color: #262626;
+      padding: 3px 0px;
+      .navbar_upside {
+        max-width: 98%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        background-color: #262626;
+        align-items: center;
+        &_img {
+          width: 30px;
+          object-fit: contain;
+        }
+        &_flag {
+          width: 50px;
+          object-fit: contain;
+        }
+        &_text {
+          color: lightgray;
+          font-size: 13px;
+          width: 200px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar_container {
+    .navbar_upside_bg {
+      max-width: 100%;
+      background-color: #262626;
+      padding: 3px 0px;
+      .navbar_upside {
+        max-width: 98%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        background-color: #262626;
+        align-items: center;
+        &_img {
+          width: 30px;
+          object-fit: contain;
+        }
+        &_flag {
+          width: 50px;
+          object-fit: contain;
+        }
+        &_text {
+          color: lightgray;
+          font-size: 13px;
+          // width: 200px;
+          // text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (max-width: 950px) {
+  .navbar_container {
+    .navbar {
+      .navbar_navmenu {
+        display: none !important;
+      }
+      &_login_lang {
+        .navbar_login {
+          display: none;
+        }
+        .fa-bars {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .navbar_container {
+    .navbar {
+      .navbar_navmenu {
+        display: flex;
+        gap: 15px;
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
