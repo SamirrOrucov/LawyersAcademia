@@ -11,3 +11,21 @@
     }
   }
 }
+
+@media (max-width: 575.98px) { 
+  .aboutSliderSection {
+    max-width: 85%;
+    margin: 50px auto;
+    &_container {
+      display: flex;
+      flex-direction: column;
+      &_aboutSide {
+        max-width: 100%;
+      }
+      &_newsSide {
+        max-width: 20%;
+      }
+    }
+  }
+  
+ }

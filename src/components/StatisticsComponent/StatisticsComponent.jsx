@@ -9,10 +9,15 @@ function StatisticsComponent() {
   return (
     <div className="statisticsComponent">
       <div className="statisticsComponent_container">
-        <p className="headOfStatistic">Basliq</p>
+        <div className="headOfStatistics">
+          <p className="factsFirst">Statistika</p>
+          <p className="factsSecond">
+          Böyük  <span>nailiyyətimizə</span> görə çox qürur duyuruq!  
+          </p>
+          <div className="line"></div>
+        </div>
         <div className="statisticCards">
           <div className="statisticCard">
-            
             <div className="number">
               <ScrollTrigger
                 onEnter={() => setCountOn(true)}
@@ -24,12 +29,10 @@ function StatisticsComponent() {
                   )}
                 </h3>
               </ScrollTrigger>
-             
             </div>
             <p>Cari ildə qeydiyyatdan keçmiş məqalələr </p>
           </div>
           <div className="statisticCard">
-            
             <div className="number">
               <ScrollTrigger
                 onEnter={() => setCountOn(true)}
@@ -41,12 +44,10 @@ function StatisticsComponent() {
                   )}
                 </h3>
               </ScrollTrigger>
-             
             </div>
             <p>Qeydiyyatdan keçmiş məqalələr</p>
           </div>
           <div className="statisticCard">
-            
             <div className="number">
               <ScrollTrigger
                 onEnter={() => setCountOn(true)}
@@ -58,12 +59,10 @@ function StatisticsComponent() {
                   )}
                 </h3>
               </ScrollTrigger>
-             
             </div>
             <p>Ümümilikdə çıxmış jurnal</p>
           </div>
           <div className="statisticCard">
-            
             <div className="number">
               <ScrollTrigger
                 onEnter={() => setCountOn(true)}
@@ -75,7 +74,6 @@ function StatisticsComponent() {
                   )}
                 </h3>
               </ScrollTrigger>
-             
             </div>
             <p>Cari ildə qeydiyyatdan keçmiş məqalələr </p>
           </div>

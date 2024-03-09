@@ -2,7 +2,7 @@ import React from "react";
 import AboutSliderComponent from "../AboutSliderComponent/AboutSliderComponent";
 import StatisticsComponent from "../StatisticsComponent/StatisticsComponent";
 import NewsSideComponent from "../NewsSideComponent/NewsSideComponent";
-import "./AboutSliderSection.scss"
+import "./AboutSliderSection.scss";
 function AboutSliderSection() {
   return (
     <div className="aboutSliderSection">
@@ -12,7 +12,7 @@ function AboutSliderSection() {
           <StatisticsComponent />
         </div>
         <div className="aboutSliderSection_container_newsSide">
-            <NewsSideComponent/>
+          <NewsSideComponent />
         </div>
       </div>
     </div>
