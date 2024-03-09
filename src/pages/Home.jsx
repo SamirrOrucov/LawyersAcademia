@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import AboutSliderSection from "../components/AboutSliderSection/AboutSliderSection";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <div>
+      <AboutSliderSection />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
