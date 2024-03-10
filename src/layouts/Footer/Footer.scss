@@ -1,0 +1,154 @@
+.footer {
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  &_location {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    height: 40vh;
+    iframe {
+      height: 40vh;
+      width: 100%;
+      border: none;
+    }
+  }
+  &_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 38%;
+    gap: 35px;
+    &_icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      i {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: gray;
+        background-color: rgba(211, 211, 211, 0.834);
+        transition: 300ms;
+        cursor: pointer;
+        &:hover {
+          color: #0176ff;
+          background-color: #0178ff89;
+        }
+      }
+      p {
+        font-size: 12px;
+      }
+      .footer_contact_location {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+      }
+      .footer_contact_phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+      }
+      .footer_contact_email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+      }
+    }
+    .footer_social {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      flex-wrap: wrap;
+      i {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: gray;
+        background-color: rgba(211, 211, 211, 0.834);
+        transition: 300ms;
+        &:hover {
+          color: #0176ff;
+          background-color: #0178ff89;
+        }
+      }
+      p {
+        font-size: 14px;
+      }
+      &_insta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+      }
+      &_fb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+      }
+      &_yb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+      }
+    }
+    &_link {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .footer {
+    &_contact {
+      .footer_social {
+        gap: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1062px) {
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    &_location {
+      width: 100%;
+    }
+    &_contact {
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .footer {
+    &_contact {
+      width: 45%;
+    }
+  }
+}
