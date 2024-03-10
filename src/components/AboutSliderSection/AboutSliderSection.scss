@@ -1,0 +1,25 @@
+.aboutSliderSection {
+  max-width: 85%;
+  margin: 50px auto;
+  &_container {
+    display: flex;
+    gap: 50px;
+    &_aboutSide {
+      max-width: 70%;
+    }
+  }
+}
+
+@media (max-width: 1446px) {
+  .aboutSliderSection {
+    max-width: 85%;
+    margin: 50px auto;
+    &_container {
+      display: flex;
+      flex-direction: column;
+      &_aboutSide {
+        max-width: 100%;
+      }
+    }
+  }
+}
