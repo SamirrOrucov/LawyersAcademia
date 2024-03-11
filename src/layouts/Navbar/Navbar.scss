@@ -117,7 +117,7 @@
         }
         .navbarBot_logo {
           img {
-            width: 70px;
+            width: 60px;
           }
         }
       }
@@ -223,6 +223,15 @@
           }
         }
       }
+      .navbarBot {
+        &_bottom {
+          .navbarBot_logo {
+            img {
+              width: 50px !important;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -244,7 +253,7 @@
           }
           .navbarBot_logo {
             img {
-              width: 60px;
+              width: 55px;
             }
           }
         }

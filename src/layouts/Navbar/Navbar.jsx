@@ -7,7 +7,6 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
   const [stickyNav, setStickyNav] = useState(false);
-  // const [stickySidebar, setStickySidebar] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", stickNavbar);
@@ -22,28 +21,12 @@ function Navbar() {
       let windowHeight = window.scrollY;
       setStickyNav(windowHeight > 100);
       setIsSideBarOpen(false);
-
-      // Güncellenmiş kısım
       setStickyNav((prevStickyNav) => {
         document.querySelector('.sidebar').style.top = prevStickyNav ? '0' : '45.5px';
         return prevStickyNav;
       });
     }
   };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", stickySidebar);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", stickySidebar);
-  //   };
-  // }, []);
-  // const stickSideBar = () => {
-  //   if (window !== undefined) {
-  //     let windowHeight = window.scrollY;
-  //     windowHeight > 100 ? setStickySidebar(true) : setStickySidebar(false);
-  //   }
-  // };
 
   const options = ["Azərbaycan", "English", "Русский"];
 
@@ -78,7 +61,7 @@ function Navbar() {
         <div className={`navbarBot  ${stickyNav ? "fixed" : ""}`}>
           <div className="navbarBot_bottom">
             <div className="navbarBot_logo">
-              <img src="../src/assets/image/lawyer-logo.png" alt="" />
+              <img src="../src/assets/image/lawyerAcademia-logo.png" alt="" />
             </div>
             <ul className="navbarBot_navmenu">
               <li>
