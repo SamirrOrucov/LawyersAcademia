@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 function AboutSliderComponent() {
   return (
     <div className="aboutSliderComponent">
+        
       <div className="aboutSliderComponent_container">
         <Swiper
           navigation={true}

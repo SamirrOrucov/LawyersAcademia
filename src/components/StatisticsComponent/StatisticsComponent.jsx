@@ -8,6 +8,7 @@ function StatisticsComponent() {
   let x = 999;
   return (
     <div className="statisticsComponent">
+      
       <div className="statisticsComponent_container">
         <div className="headOfStatistics">
           <p className="factsFirst">Statistika</p>
@@ -15,8 +16,15 @@ function StatisticsComponent() {
             Böyük <span>nailiyyətimizə</span> görə çox qürur duyuruq!
           </p>
 
-          <div className="line"></div>
+          <div className="lines">
+          <div className="line One"></div>
+          <div className="line Two"></div>
+          <div className="line Three"></div>
+          <div className="line Four"></div>
+          <div className="line Five"></div>
         </div>
+        </div>
+        
         <div className="statisticCards">
           <div className="statisticCard">
             <div className="number">

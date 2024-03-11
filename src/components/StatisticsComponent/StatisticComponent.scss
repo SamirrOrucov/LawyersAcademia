@@ -7,7 +7,7 @@
       max-width: 40%;
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 10px;
       .factsFirst {
         font-size: 14px;
         color: #1980b6;
@@ -20,12 +20,38 @@
           color: #1980b6;
         }
       }
-      .line {
-        margin-top: 10px;
-        width: 100px;
-        border-left: 0px solid transparent;
-        border-right: 20px solid transparent;
-        border-bottom: 15px solid #1980b6;
+      .lines {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55px;
+        margin-left: 75px;
+        .line {
+          height: 1px;
+          background-color: #1980B6;
+        }
+        .One{
+            width: 205px;
+            height: 2px;
+        }
+        .Two{
+          height: 2px;
+
+            width: 202px;
+        }
+        .Three{
+          height: 2px;
+
+            width: 199px;
+        }
+        .Four{
+          height: 2px;
+
+            width: 196px;
+        }
+        .Five{
+            width: 193px;
+        }
       }
     }
     .statisticCards {

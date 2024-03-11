@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
+import { Select } from "antd";
 
 function Navbar() {
-  const [selectedOption, setSelectedOption] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
   const [stickyNav, setStickyNav] = useState(false);
 
@@ -22,22 +21,16 @@ function Navbar() {
       setStickyNav(windowHeight > 100);
       setIsSideBarOpen(false);
       setStickyNav((prevStickyNav) => {
-        document.querySelector('.sidebar').style.top = prevStickyNav ? '0' : '45.5px';
+        document.querySelector(".sidebar").style.top = prevStickyNav
+          ? "0"
+          : "45.5px";
         return prevStickyNav;
       });
     }
   };
-
-  const options = ["Azərbaycan", "English", "Русский"];
-
-  const handleSelectChange = (option) => {
-    setSelectedOption(option);
-    setIsOpen(false);
-  };
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+  function handleChange(value) {
+    console.log(`selected ${value}`);
+  }
   return (
     <div className="navbar">
       <div className="navbar_container">
@@ -139,27 +132,16 @@ function Navbar() {
             </ul>
             <div className="navbarBot_login_lang">
               <div className="navbarBot_lang">
-                <div className={`select-header`} onClick={toggleDropdown}>
-                  <div>{selectedOption || "Azərbaycan"}</div>
-                  <i
-                    className={`${
-                      isOpen ? "fa-solid fa-angle-up" : "fa-solid fa-angle-down"
-                    }`}
-                  ></i>
-                </div>
-                {isOpen && (
-                  <ul className="navbarBot_select">
-                    {options.map((option, index) => (
-                      <li
-                        className="navbarBot_option"
-                        key={index}
-                        onClick={() => handleSelectChange(option)}
-                      >
-                        {option}
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                <Select
+                  defaultValue="lucy"
+                  style={{ width: 120 }}
+                  onChange={handleChange}
+                >
+                  <Option value="aze">Azərbaycan</Option>
+                  <Option value="eng">English</Option>
+                  <Option value="rus">Русский</Option>
+               
+                </Select>
               </div>
               <div className="navbarBot_login">
                 <i className="fa-solid fa-user"></i>

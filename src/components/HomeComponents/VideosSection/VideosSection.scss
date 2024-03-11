@@ -6,20 +6,19 @@
     .videosSection_header {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 10px;
       margin: 30px 0px;
       &_title {
         font-family: "Open Sans", sans-serif;
-        letter-spacing: 2px;
-        color: #124076;
+        color: #12638e;
+        font-size: 14px;
+        font-weight: 500;
       }
       &_desc {
-        font-size: 24px;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 500;
+        font-size: 28px;
+        font-weight: 700;
         span {
-          font-family: "Playfair Display", serif;
-          color: #0176FF;
+          color: #1980B6;
         }
       }
       .lines {
@@ -27,24 +26,32 @@
         flex-direction: column;
         align-items: center;
         width: 55px;
+        margin-left: 75px;
         .line {
           height: 1px;
-          background-color: #001b79;
+          background-color: #1980B6;
         }
         .One{
-            width: 55px;
+            width: 205px;
+            height: 2px;
         }
         .Two{
-            width: 52px;
+          height: 2px;
+
+            width: 202px;
         }
         .Three{
-            width: 49px;
+          height: 2px;
+
+            width: 199px;
         }
         .Four{
-            width: 46px;
+          height: 2px;
+
+            width: 196px;
         }
         .Five{
-            width: 43px;
+            width: 193px;
         }
       }
     }
@@ -52,6 +59,7 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin: 100px 0;
       .videosSection_content {
         &_video {
           iframe {

@@ -29,6 +29,20 @@ export default function ContactUsComponent() {
   };
   return (
     <div className="contactUsComponent">
+      <div className="headOfStatistics">
+          <p className="factsFirst">Əlaqə</p>
+          <p className="factsSecond">
+            Sualın var? <span>Müraciət et</span> !
+          </p>
+
+          <div className="lines">
+          <div className="line One"></div>
+          <div className="line Two"></div>
+          <div className="line Three"></div>
+          <div className="line Four"></div>
+          <div className="line Five"></div>
+        </div>
+        </div>
       <div className="contactUsComponent_container">
         <div className="contactUsComponent_container_textSide">
           <img src="/public/contact.png" alt="" />
