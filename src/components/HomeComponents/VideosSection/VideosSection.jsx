@@ -24,9 +24,8 @@ function VideosSection() {
               <iframe
                 width=""
                 height=""
-                src="https://www.youtube.com/embed/Aj_H5vvxXtw?si=LLYcJ_3Wt5A6sG9j"
+                src="https://www.youtube.com/embed/Aj_H5vvxXtw"
                 title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
             </div>
@@ -40,9 +39,8 @@ function VideosSection() {
               <iframe
                 width=""
                 height=""
-                src="https://www.youtube.com/embed/Aj_H5vvxXtw?si=LLYcJ_3Wt5A6sG9j"
+                src="https://www.youtube.com/embed/Aj_H5vvxXtw"
                 title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
             </div>
@@ -56,9 +54,8 @@ function VideosSection() {
               <iframe
                 width=""
                 height=""
-                src="https://www.youtube.com/embed/Aj_H5vvxXtw?si=LLYcJ_3Wt5A6sG9j"
+                src="https://www.youtube.com/embed/Aj_H5vvxXtw"
                 title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
             </div>

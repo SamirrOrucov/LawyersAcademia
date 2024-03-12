@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
 import { Select } from "antd";
+const { Option } = Select;
 
 function Navbar() {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
@@ -133,7 +134,7 @@ function Navbar() {
             <div className="navbarBot_login_lang">
               <div className="navbarBot_lang">
                 <Select
-                  defaultValue="lucy"
+                  defaultValue="Azərbaycan"
                   style={{ width: 120 }}
                   onChange={handleChange}
                 >
