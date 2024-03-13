@@ -72,6 +72,18 @@ function Navbar() {
               </li>
               <li>
                 <NavLink
+                  to="/haqqimizda"
+                  style={({ isActive }) => {
+                    return {
+                      color: isActive ? "#0176ff" : "",
+                    };
+                  }}
+                >
+                  Haqqımızda
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/qanunvericilik"
                   style={({ isActive }) => {
                     return {
@@ -80,6 +92,18 @@ function Navbar() {
                   }}
                 >
                   Qanunvericilik
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/heyet"
+                  style={({ isActive }) => {
+                    return {
+                      color: isActive ? "#0176ff" : "",
+                    };
+                  }}
+                >
+                  Heyət
                 </NavLink>
               </li>
               <li>
@@ -118,18 +142,7 @@ function Navbar() {
                   Elektron kitabxana
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  to="/heyet"
-                  style={({ isActive }) => {
-                    return {
-                      color: isActive ? "#0176ff" : "",
-                    };
-                  }}
-                >
-                  Heyət
-                </NavLink>
-              </li>
+              
             </ul>
             <div className="navbarBot_login_lang">
               <div className="navbarBot_lang">
@@ -176,6 +189,18 @@ function Navbar() {
               </NavLink>
             </li>
             <li>
+                <NavLink
+                  to="/haqqimizda"
+                  style={({ isActive }) => {
+                    return {
+                      color: isActive ? "#0176ff" : "",
+                    };
+                  }}
+                >
+                  Haqqımızda
+                </NavLink>
+              </li>
+            <li>
               <NavLink
                 to="/qanunvericilik"
                 style={({ isActive }) => {
@@ -187,6 +212,18 @@ function Navbar() {
                 Qanunvericilik
               </NavLink>
             </li>
+            <li>
+                <NavLink
+                  to="/heyet"
+                  style={({ isActive }) => {
+                    return {
+                      color: isActive ? "#0176ff" : "",
+                    };
+                  }}
+                >
+                  Heyət
+                </NavLink>
+              </li>
             <li>
               <NavLink
                 to="/xeberler"
@@ -223,18 +260,7 @@ function Navbar() {
                 Elektron kitabxana
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/heyet"
-                style={({ isActive }) => {
-                  return {
-                    color: isActive ? "#0176ff" : "",
-                  };
-                }}
-              >
-                Heyət
-              </NavLink>
-            </li>
+            
           </ul>
           <div className="sidebar_login">
             <i className="fa-solid fa-user"></i>

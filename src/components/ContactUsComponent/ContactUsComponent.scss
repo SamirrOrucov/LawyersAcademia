@@ -178,7 +178,7 @@
       &_formSide {
         margin: 0 auto;
         input {
-          width: 300px;
+          width: 250px;
           padding: 10px;
         }
         .firstLine {
@@ -186,7 +186,7 @@
           flex-direction: column;
           gap: 15px;
           .numberInput {
-            width: 300px !important;
+            width: 250px !important;
           }
         }
         .secondLine {
@@ -195,12 +195,12 @@
           align-items: center;
           gap: 15px;
           button {
-            width: 300px;
+            width: 250px;
             height: 44px;
           }
           .uploadFile {
             .ant-upload-list-item-container {
-              width: 300px;
+              width: 250px;
             }
             .ant-upload-list-item-action {
               width: 38px;
@@ -210,6 +210,7 @@
         .thirdLine {
           textarea {
             height: 250px;
+            
           }
         }
         .submit {
