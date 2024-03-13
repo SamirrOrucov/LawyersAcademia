@@ -1,18 +1,70 @@
 .aboutSliderSection {
   max-width: 85%;
   margin: 50px auto;
+  .headOfStatistics {
+    text-align: start;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px 0;
+    .factsFirst {
+      font-size: 14px;
+      color: #1980b6;
+      font-weight: 500;
+    }
+    .factsSecond {
+      font-size: 30px;
+      font-weight: 700;
+      span {
+        color: #1980b6;
+      }
+    }
+    .lines {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 55px;
+      margin-left: 75px;
+      .line {
+        height: 1px;
+        background-color: #1980b6;
+      }
+      .One {
+        width: 205px;
+        height: 2px;
+      }
+      .Two {
+        height: 2px;
+
+        width: 202px;
+      }
+      .Three {
+        height: 2px;
+
+        width: 199px;
+      }
+      .Four {
+        height: 2px;
+
+        width: 196px;
+      }
+      .Five {
+        width: 193px;
+      }
+    }
+  }
   &_container {
     display: flex;
+    gap: 50px;
+
     &_aboutSide {
       max-width: 70%;
-    }
-    &_newsSide {
-      max-width: 20%;
     }
   }
 }
 
-@media (max-width: 575.98px) { 
+@media (max-width: 1446px) {
   .aboutSliderSection {
     max-width: 85%;
     margin: 50px auto;
@@ -22,10 +74,6 @@
       &_aboutSide {
         max-width: 100%;
       }
-      &_newsSide {
-        max-width: 20%;
-      }
     }
   }
-  
- }
+}

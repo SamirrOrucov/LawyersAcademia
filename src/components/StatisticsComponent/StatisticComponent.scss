@@ -1,13 +1,16 @@
 .statisticsComponent {
   max-width: 100%;
-  margin: 100px auto;
+  margin: 130px auto;
   &_container {
     .headOfStatistics {
       text-align: start;
       max-width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       .factsFirst {
         font-size: 14px;
-        color: hsl(201, 76%, 41%);
+        color: #1980b6;
         font-weight: 500;
       }
       .factsSecond {
@@ -17,14 +20,47 @@
           color: #1980b6;
         }
       }
+      .lines {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55px;
+        margin-left: 75px;
+        .line {
+          height: 1px;
+          background-color: #1980B6;
+        }
+        .One{
+            width: 205px;
+            height: 2px;
+        }
+        .Two{
+          height: 2px;
+
+            width: 202px;
+        }
+        .Three{
+          height: 2px;
+
+            width: 199px;
+        }
+        .Four{
+          height: 2px;
+
+            width: 196px;
+        }
+        .Five{
+            width: 193px;
+        }
+      }
     }
     .statisticCards {
-      margin-top: 50px;
+      margin-top: 70px;
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
       .statisticCard {
-        width: 250px;
+        width: 350px;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
           rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
         height: 150px;
@@ -69,7 +105,7 @@
 @media (max-width: 575.98px) {
   .statisticsComponent {
     max-width: 100%;
-    margin: 100px auto;
+    margin: 70px auto;
     &_container {
       padding-left: 20px;
       .headOfStatistics {
@@ -123,7 +159,7 @@
           &:hover {
             scale: 110%;
           }
-          
+
           .number {
             color: white;
             padding: 5px 25px;
@@ -134,12 +170,4 @@
       }
     }
   }
-  }
-
-@media (min-width: 576px) and (max-width: 767.98px) {  }
-
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-
-@media (min-width: 1200px) {  }
+}
