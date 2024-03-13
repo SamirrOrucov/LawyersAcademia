@@ -150,8 +150,9 @@ function Navbar() {
                   defaultValue="Azərbaycan"
                   style={{ width: 120 }}
                   onChange={handleChange}
+                  className="navbarBot_lang_select"
                 >
-                  <Option value="aze">Azərbaycan</Option>
+                  <Option className="navbarBot_lang_option" value="aze">Azərbaycan</Option>
                   <Option value="eng">English</Option>
                   <Option value="rus">Русский</Option>
                
