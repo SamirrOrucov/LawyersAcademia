@@ -79,7 +79,7 @@ function Footer() {
         <div className="footer_underside">
           <p>domain ©2024 Müəllif Hüquqları Qorunur</p>
           <p>
-            Made by <span>gradiant.tech</span>
+            Made by <span><Link to={"https://www.instagram.com/gradiant.tech"}>gradiant.tech</Link></span>
           </p>
         </div>
       </div>
