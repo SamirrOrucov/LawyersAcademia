@@ -16,7 +16,6 @@ function AboutSliderComponent() {
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Navigation]}
-
           className="mySwiper"
         >
           <SwiperSlide className="swiper_slide">
@@ -28,22 +27,17 @@ function AboutSliderComponent() {
               Kollegiyanın üzvü, professor, hüquq elmləri doktoru Əmir Əliyevin
               Akademiyanın rəhbəri təyin edilib.
             </div>
-            <div className="aboutSlider_btn">
-              <button>
-                <Link to={"/"}>
+            <Link to={"/"}>
+              <div className="aboutSlider_btn">
+                <button>
                   Daha <span>ətraflı</span>
-                </Link>
-              </button>
-              <div className="lines">
-                <div className="line One"></div>
-                <div className="line Two"></div>
-                <div className="line Three"></div>
-                <div className="line Four"></div>
-                <div className="line Five"></div>
+                </button>
+                <div className="hoverOne"></div>
+                <div className="hoverTwo"></div>
               </div>
-            </div>
+            </Link>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="swiper_slide">
             <img
               src="https://www.e-huquq.az/media/2022/08/17/vekillerkollegiyasi2.jpg"
               alt=""
@@ -52,8 +46,17 @@ function AboutSliderComponent() {
               Kollegiyanın üzvü, professor, hüquq elmləri doktoru Əmir Əliyevin
               Akademiyanın rəhbəri təyin edilib.
             </div>
+            <Link to={"/"}>
+              <div className="aboutSlider_btn">
+                <button>
+                  Daha <span>ətraflı</span>
+                </button>
+                <div className="hoverOne"></div>
+                <div className="hoverTwo"></div>
+              </div>
+            </Link>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="swiper_slide">
             <img
               src="https://www.e-huquq.az/media/2022/08/17/vekillerkollegiyasi2.jpg"
               alt=""
@@ -62,8 +65,17 @@ function AboutSliderComponent() {
               Kollegiyanın üzvü, professor, hüquq elmləri doktoru Əmir Əliyevin
               Akademiyanın rəhbəri təyin edilib.
             </div>
+            <Link to={"/"}>
+              <div className="aboutSlider_btn">
+                <button>
+                  Daha <span>ətraflı</span>
+                </button>
+                <div className="hoverOne"></div>
+                <div className="hoverTwo"></div>
+              </div>
+            </Link>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="swiper_slide">
             <img
               src="https://www.e-huquq.az/media/2022/08/17/vekillerkollegiyasi2.jpg"
               alt=""
@@ -72,8 +84,17 @@ function AboutSliderComponent() {
               Kollegiyanın üzvü, professor, hüquq elmləri doktoru Əmir Əliyevin
               Akademiyanın rəhbəri təyin edilib.
             </div>
+            <Link to={"/"}>
+              <div className="aboutSlider_btn">
+                <button>
+                  Daha <span>ətraflı</span>
+                </button>
+                <div className="hoverOne"></div>
+                <div className="hoverTwo"></div>
+              </div>
+            </Link>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="swiper_slide">
             <img
               src="https://www.e-huquq.az/media/2022/08/17/vekillerkollegiyasi2.jpg"
               alt=""
@@ -82,6 +103,15 @@ function AboutSliderComponent() {
               Kollegiyanın üzvü, professor, hüquq elmləri doktoru Əmir Əliyevin
               Akademiyanın rəhbəri təyin edilib.
             </div>
+            <Link to={"/"}>
+              <div className="aboutSlider_btn">
+                <button>
+                  Daha <span>ətraflı</span>
+                </button>
+                <div className="hoverOne"></div>
+                <div className="hoverTwo"></div>
+              </div>
+            </Link>
           </SwiperSlide>
         </Swiper>
       </div>
