@@ -125,7 +125,7 @@
     }
     .sidebar {
       position: fixed;
-      top: 45.5px;
+      top: 52px;
       right: 0;
       height: 100%;
       width: 200px;
@@ -187,40 +187,27 @@
   padding: 0px 5px;
 }
 
-@media (max-width: 376px) {
-  .navbar_container {
-    .navbar_upside_bg {
-      .navbar_upside {
-        &_text {
-          font-size:11px !important;
-          width: 180px;
-          text-align: center;
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 476px) {
   .navbar_container {
     .navbar_upside_bg {
       .navbar_upside {
         &_text {
-          font-size: 12px;
+          font-size: 11px;
           width: 200px;
-          text-align: center;
         }
       }
     }
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 588.98px) {
   .navbar {
     .navbar_container {
       .navbar_upside_bg {
         .navbar_upside {
           &_text {
             font-size: 13px;
+          text-align: center;
+          padding: 0px 3px;
           }
         }
       }
@@ -236,20 +223,20 @@
     }
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1160px) {
   .navbar {
     .navbar_container {
       .navbarBot {
         &_bottom {
           .navbarBot_navmenu {
-            display: none;
+            display: none !important;
           }
           .navbarBot_login_lang {
             .fa-bars {
               display: block;
             }
             .navbarBot_login {
-              display: none;
+              display: none !important;
             }
           }
           .navbarBot_logo {
@@ -262,7 +249,43 @@
     }
   }
 }
-@media (min-width: 1000px) and (max-width: 1199.98px) {
+@media (max-width: 1200px) {
+  .navbar {
+    .navbar_container {
+      .navbarBot {
+        &_bottom {
+          .navbarBot_navmenu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            li {
+              font-size: 13px;
+            }
+          }
+          .navbarBot_login_lang {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            .navbarBot_login {
+              display: flex;
+              gap: 5px;
+              align-items: center;
+              padding: 5px;
+              background-color: #0176ff;
+              color: white;
+              cursor: pointer;
+              font-size: 13px;
+              .fa-user {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) and (max-width: 1360px) {
   .navbar {
     .navbar_container {
       .navbarBot {

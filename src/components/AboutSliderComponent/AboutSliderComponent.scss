@@ -5,6 +5,62 @@
   &_container {
     width: 100%;
     height: 600px;
+    .mySwiper{
+      .swiper_slide{
+        position: relative;
+        .aboutSlider_btn{
+          position: absolute;
+          left: 20px;
+          bottom: 20%;
+          z-index: 3;
+          background-color: white;
+          width: 110px;
+          height: 40px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 3px;
+          padding: 5px;
+          button{
+            border: none;
+            background-color: transparent;
+            // font-size: 18px;
+            font-weight: 600;
+            span{
+              color: #1980b6;
+            }
+          }
+          .lines {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // width: 55px;
+            .line {
+              height: 1px;
+              background-color: #1980b6;
+            }
+            .One {
+              width: 100px;
+            }
+            .Two {
+              width: 97px;
+            }
+            .Three {
+    
+              width: 94px;
+            }
+            .Four {
+    
+              width: 91px;
+            }
+            .Five {
+              width: 88px;
+            }
+          }
+        }
+      }
+    }
 
     img {
       object-fit: cover;
@@ -29,6 +85,7 @@
       color: white;
       font-weight: 700;
     }
+    
   }
 }
 @media (max-width: 449.98px) {
