@@ -69,14 +69,11 @@ function About() {
             </div>
             <div className="about_content">
               <p className="about_content_title">
-                <span>Ünvan</span> və Büdcə:
+                <span>Ünvan</span> və Əlaqə:
               </p>
               <p className="about_content_desc">
                 Akademiya Bakı şəhəri, Nəsimi rayonu, Səməd Vurğun küçəsi 32
-                ünvanında yerləşir. Akademiyanın büdcəsi Vəkillər Kollegiyasının
-                daxili imkanlarından edilən köçürmələr, ianə və qrantlar,
-                göstərilən xidmətlərdən alınan haqq formalaşır hesabına
-                formalaşır.
+                ünvanında yerləşir. 
               </p>
             </div>
           </div>

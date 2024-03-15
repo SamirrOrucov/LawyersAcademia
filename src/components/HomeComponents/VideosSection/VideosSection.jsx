@@ -8,7 +8,7 @@ function VideosSection() {
         <div className="videosSection_header">
           <p className="videosSection_header_title">Videoçarxlar</p>
           <p className="videosSection_header_desc">
-            Marifləndirici <span>Videolar</span>
+            Maarifləndirici <span>Videolar</span>
           </p>
           <div className="lines">
             <div className="line One"></div>

@@ -14,7 +14,9 @@ function AboutSliderComponent() {
         throw new Error("Failed to fetch news data");
       }
       const data = await response.json();
-      const sortedData = data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+      const sortedData = data.sort(
+        (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+      );
       setNewsData(sortedData);
     } catch (error) {
       console.error("Error fetching news data:", error);
@@ -38,7 +40,7 @@ function AboutSliderComponent() {
           className="mySwiper"
         >
           {newsData.slice(0, 5).map((item) => (
-            <SwiperSlide className="swiper_slide">
+            <SwiperSlide className="swiper_slide" key={item._id}>
               <img src={item.mainImage} alt="" />
               <div className="text">{item.title}</div>
               <div className="aboutSlider_btn">

@@ -10,7 +10,7 @@ function NewsSideComponent() {
         throw new Error("Failed to fetch news data");
       }
       const data = await response.json();
-      console.log(data);
+     
       const sortedData = data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
       setNewsData(sortedData);
@@ -28,8 +28,8 @@ function NewsSideComponent() {
       <div className="newsSideComponent_container">
         <div className="newsSideComponent_container_cards">
           {newsData.slice(0, 10).map((item) => (
-            <div className="newsSideComponent_container_cards_card">
-              {console.log(item)}
+            <div key={item._id} className="newsSideComponent_container_cards_card">
+            
               <div className="newsPhoto">
                 <img src={item.mainImage} alt="" />
               </div>

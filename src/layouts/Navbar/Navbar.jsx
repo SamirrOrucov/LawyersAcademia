@@ -35,23 +35,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar_container">
-        <div className="navbar_upside_bg">
-          <div className="navbar_upside">
-            <img
-              className="navbar_upside_img"
-              src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Heydar_Aliyev_%28crop%29.jpg"
-              alt=""
-            />
-            <p className="navbar_upside_text">
-              Azərbyacan Respublikası Vəkillər Kollegiyası Akademiyası
-            </p>
-            <img
-              className="navbar_upside_flag"
-              src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg"
-              alt=""
-            />
-          </div>
-        </div>
+       
         <div className={`navbarBot  ${stickyNav ? "fixed" : ""}`}>
           <div className="navbarBot_bottom">
             <div className="navbarBot_logo">
