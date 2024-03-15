@@ -1,7 +1,9 @@
 import React from "react";
 import "./VideosSection.scss";
+import YouTube from "react-youtube";
 
 function VideosSection() {
+  const videoId = "Aj_H5vvxXtw";
   return (
     <div className="videosSection">
       <div className="videosSection_container">
@@ -21,18 +23,13 @@ function VideosSection() {
         <div className="videosSection_contents">
           <div className="videosSection_content">
             <div className="videosSection_content_video">
-              <iframe
-                width=""
-                height=""
-                src="https://www.youtube.com/embed/Aj_H5vvxXtw"
-                title="YouTube video player"
-                allowFullScreen
-              ></iframe>
+              <YouTube videoId={videoId} />
             </div>
             <p className="videosSection_content_title">
               Vəkillər Kollegiyasının 5 illik hesabat filmi
             </p>
           </div>
+
           <div className="videosSection_content">
             <div className="videosSection_content_video">
               {" "}
@@ -42,6 +39,7 @@ function VideosSection() {
                 src="https://www.youtube.com/embed/Aj_H5vvxXtw"
                 title="YouTube video player"
                 allowFullScreen
+                allow-same-origin
               ></iframe>
             </div>
             <p className="videosSection_content_title">
