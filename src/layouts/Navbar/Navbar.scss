@@ -2,31 +2,6 @@
   max-width: 100vw;
   .navbar_container {
     margin: 0 auto;
-    .navbar_upside_bg {
-      max-width: 100%;
-      background-color: #262626;
-      padding: 3px 0px;
-      .navbar_upside {
-        max-width: 85%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 3px 0px;
-        &_img {
-          width: 30px;
-          object-fit: contain;
-        }
-        &_flag {
-          width: 50px;
-          object-fit: contain;
-        }
-        &_text {
-          color: lightgray;
-          font-size: 14px;
-        }
-      }
-    }
     .navbarBot {
       max-width: 100%;
       &_bottom {
@@ -125,7 +100,7 @@
     }
     .sidebar {
       position: fixed;
-      top: 52px;
+      top: 0;
       right: 0;
       height: 100%;
       width: 200px;
