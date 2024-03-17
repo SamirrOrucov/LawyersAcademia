@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./VideosSection.scss";
 
 function VideosSection() {
+  const [video, setVideo] = useState([]);
+  async function getVideoLinks() {
+    const response = await fetch("http://localhost:3003/youtubeLinks");
+    const data = await response.json();
+    setVideo(data);
+  }
+  useEffect(() => {
+    getVideoLinks();
+  }, []);
   return (
     <div className="videosSection">
       <div className="videosSection_container">
@@ -19,50 +28,22 @@ function VideosSection() {
           </div>
         </div>
         <div className="videosSection_contents">
-          <div className="videosSection_content">
-            <div className="videosSection_content_video">
-              <iframe
-                width=""
-                height=""
-                src="https://www.youtube.com/embed/Aj_H5vvxXtw"
-                title="YouTube video player"
-                allowFullScreen
-              ></iframe>
+          {video.map((item) => (
+            <div key={item._id} className="videosSection_content">
+              <div className="videosSection_content_video">
+                <iframe
+                  width=""
+                  height=""
+                  src={item.link}
+                  title="YouTube video player"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p className="videosSection_content_title">
+                {item.title}
+              </p>
             </div>
-            <p className="videosSection_content_title">
-              Vəkillər Kollegiyasının 5 illik hesabat filmi
-            </p>
-          </div>
-          <div className="videosSection_content">
-            <div className="videosSection_content_video">
-              {" "}
-              <iframe
-                width=""
-                height=""
-                src="https://www.youtube.com/embed/Aj_H5vvxXtw"
-                title="YouTube video player"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <p className="videosSection_content_title">
-              Vəkillər Kollegiyasının 5 illik hesabat filmi
-            </p>
-          </div>
-          <div className="videosSection_content">
-            <div className="videosSection_content_video">
-              {" "}
-              <iframe
-                width=""
-                height=""
-                src="https://www.youtube.com/embed/Aj_H5vvxXtw"
-                title="YouTube video player"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <p className="videosSection_content_title">
-              Vəkillər Kollegiyasının 5 illik hesabat filmi
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </div>

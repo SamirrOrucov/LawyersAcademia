@@ -1,11 +1,12 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import "./ContactUsComponent.scss";
 import { Button, Form, Input, Upload } from "antd";
-import {  UploadOutlined } from "@ant-design/icons";
+import { UploadOutlined } from "@ant-design/icons";
+// import { ToastContainer, toast } from "react-toastify";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function ContactUsComponent() {
   const [form] = Form.useForm();
-  const [successMessageVisible, setSuccessMessageVisible] = useState(false);
 
   const onFinish = async (values) => {
     try {
@@ -24,12 +25,8 @@ export default function ContactUsComponent() {
         method: "POST",
         body: formData,
       });
-      const result = await response.json();
+
       form.resetFields();
-      setSuccessMessageVisible(true);
-      setTimeout(() => {
-        setSuccessMessageVisible(false);
-      }, 3000);
     } catch (error) {
       console.error("Error submitting form:", error);
     }
@@ -41,123 +38,126 @@ export default function ContactUsComponent() {
     }
     return e?.fileList;
   };
+  const notify = () => toast.success("Müraciətiniz göndərildi!");
 
   return (
-    <div className="contactUsComponent">
-      <div className="headOfStatistics">
-        <p className="factsFirst">Əlaqə</p>
-        <p className="factsSecond">
-          Sualın var? <span>Müraciət et</span> !
-        </p>
-
-        <div className="lines">
-          <div className="line One"></div>
-          <div className="line Two"></div>
-          <div className="line Three"></div>
-          <div className="line Four"></div>
-          <div className="line Five"></div>
-        </div>
+    <>
+      <div className="successMessage">
+        <Toaster position="top-center" reverseOrder={false} />{" "}
       </div>
-      <div className="contactUsComponent_container">
-        <div className="contactUsComponent_container_textSide">
-          <img src="/public/contact.png" alt="" />
-          <div className="textBox">
-            <p className="muraciet">Müraciət edin</p>
+
+      <div className="contactUsComponent">
+        <div className="headOfStatistics">
+          <p className="factsFirst">Əlaqə</p>
+          <p className="factsSecond">
+            Sualın var? <span>Müraciət et</span> !
+          </p>
+
+          <div className="lines">
+            <div className="line One"></div>
+            <div className="line Two"></div>
+            <div className="line Three"></div>
+            <div className="line Four"></div>
+            <div className="line Five"></div>
           </div>
         </div>
-        <div className="contactUsComponent_container_formSide">
-          <Form form={form} onFinish={onFinish} autoComplete="off">
-            <div className="firstLine">
-              <Form.Item
-                name="username"
-                rules={[
-                  {
-                    required: true,
-                    message: "Zəhmət olmazsa Ad və Soyadınızı yazın!",
-                  },
-                ]}
-              >
-                <Input placeholder="Ad və Soyad qeyd edin" />
-              </Form.Item>
-
-              <Form.Item
-                name="number"
-                rules={[
-                  {
-                    required: true,
-                    message: "Zəhmət olmazsa nömrənizi qeyd edin!",
-                  },
-                ]}
-              >
-                <Input
-                  className="numberInput"
-                  type="number"
-                  style={{
-                    width: "100%",
-                  }}
-                  placeholder="Nömrəni qeyd edin"
-                  maxLength={10}
-                />
-              </Form.Item>
+        <div className="contactUsComponent_container">
+          <div className="contactUsComponent_container_textSide">
+            <img src="/public/contact.png" alt="" />
+            <div className="textBox">
+              <p className="muraciet">Müraciət edin</p>
             </div>
-            <div className="secondLine">
-              <Form.Item
-                name="email"
-                rules={[
-                  {
-                    type: "email",
-                    message: "E-mail yanlışdır!",
-                  },
-                  {
-                    required: true,
-                    message: "Zəhmət olmazsa E-mail'i qeyd edin!",
-                  },
-                ]}
-              >
-                <Input placeholder="Email qeyd edin" />
-              </Form.Item>
-              <Form.Item
-                name="upload"
-                valuePropName="fileList"
-                getValueFromEvent={normFile}
-                className="uploadFile"
-               
-              >
-                <Upload
-                  name="upload"
-                  action="http://localhost:3003/upload"
-                  listType="picture"
+          </div>
+          <div className="contactUsComponent_container_formSide">
+            <Form form={form} onFinish={onFinish} autoComplete="off">
+              <div className="firstLine">
+                <Form.Item
+                  name="username"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Zəhmət olmazsa Ad və Soyadınızı yazın!",
+                    },
+                  ]}
                 >
-                  <Button icon={<UploadOutlined />}>Fayl seçin</Button>
-                </Upload>
-              </Form.Item>
-            </div>
-            <div className="thirdLine">
-              <Form.Item
-                name="content"
-                rules={[
-                  {
-                    required: true,
-                    message: "Zəhmət olmazsa müraciətinizi yazın!",
-                  },
-                ]}
-              >
-                <Input.TextArea
-                  showCount
-                  maxLength={1000}
-                  placeholder="Müraciətiniz qeyd edin"
-                />
-              </Form.Item>
-            </div>
-            <button className="submit">Müraciəti göndər</button>
-          </Form>
-          {successMessageVisible && (
-            <div className="successMessage">
-              <p>Your form request has been sent.</p>
-            </div>
-          )}
+                  <Input placeholder="Ad və Soyad qeyd edin" />
+                </Form.Item>
+
+                <Form.Item
+                  name="number"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Zəhmət olmazsa nömrənizi qeyd edin!",
+                    },
+                  ]}
+                >
+                  <Input
+                    className="numberInput"
+                    type="number"
+                    style={{
+                      width: "100%",
+                    }}
+                    placeholder="Nömrəni qeyd edin"
+                    maxLength={10}
+                  />
+                </Form.Item>
+              </div>
+              <div className="secondLine">
+                <Form.Item
+                  name="email"
+                  rules={[
+                    {
+                      type: "email",
+                      message: "E-mail yanlışdır!",
+                    },
+                    {
+                      required: true,
+                      message: "Zəhmət olmazsa E-mail'i qeyd edin!",
+                    },
+                  ]}
+                >
+                  <Input placeholder="Email qeyd edin" />
+                </Form.Item>
+                <Form.Item
+                  name="upload"
+                  valuePropName="fileList"
+                  getValueFromEvent={normFile}
+                  className="uploadFile"
+                >
+                  <Upload
+                    name="upload"
+                    // action="http://localhost:3003/upload"
+                    listType="picture"
+                  >
+                    <Button icon={<UploadOutlined />}>Fayl seçin</Button>
+                  </Upload>
+                </Form.Item>
+              </div>
+              <div className="thirdLine">
+                <Form.Item
+                  name="content"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Zəhmət olmazsa müraciətinizi yazın!",
+                    },
+                  ]}
+                >
+                  <Input.TextArea
+                    showCount
+                    maxLength={1000}
+                    placeholder="Müraciətiniz qeyd edin"
+                  />
+                </Form.Item>
+              </div>
+              <button className="submit" onClick={notify}>
+                Müraciəti göndər
+              </button>
+            </Form>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
