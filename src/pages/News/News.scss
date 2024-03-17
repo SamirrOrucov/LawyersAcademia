@@ -1,49 +1,79 @@
-.news{
-    max-width: 100%;
-    &_container{
-        max-width: 85%;
-        margin: 50px auto;
-        .news_header {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin: 30px 0px;
-            p {
-              font-size: 28px;
-              font-weight: 700;
-            }
-            .lines {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              width: 110px;
-              .line {
-                height: 1.5px;
-                background-color: #1980b6;
-              }
-              .One {
-                width: 110px;
-              }
-              .Two {
-                width: 107px;
-              }
-              .Three {
-                width: 104px;
-              }
-              .Four {
-                width: 101px;
-              }
-              .Five {
-                width: 98px;
-              }
-            }
-          }
-          .news_cards{
-            display: flex;
-            flex-direction: column;
-            gap: 60px;
-            margin: 50px 0px;
-            align-items: center ;
-          }
+.news {
+  max-width: 100%;
+  &_container {
+    max-width: 85%;
+    margin: 50px auto;
+    .news_header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 30px 0px;
+      p {
+        font-size: 28px;
+        font-weight: 700;
+      }
+      .lines {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 110px;
+        .line {
+          height: 1.5px;
+          background-color: #1980b6;
+        }
+        .One {
+          width: 110px;
+        }
+        .Two {
+          width: 107px;
+        }
+        .Three {
+          width: 104px;
+        }
+        .Four {
+          width: 101px;
+        }
+        .Five {
+          width: 98px;
+        }
+      }
     }
+    .news_cards {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      margin: 50px 0px;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .news {
+    &_container {
+      .news_header {
+        p {
+          font-size: 24px;
+        }
+        .lines {
+          width: 90px;
+          .One {
+            width: 90px;
+          }
+          .Two {
+            width: 87px;
+          }
+          .Three {
+            width: 84px;
+          }
+          .Four {
+            width: 81px;
+          }
+          .Five {
+            width: 78px;
+          }
+        }
+      }
+    }
+  }
 }
