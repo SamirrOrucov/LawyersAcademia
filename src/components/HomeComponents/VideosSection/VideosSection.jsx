@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./VideosSection.scss";
-import YouTube from "react-youtube";
 
 function VideosSection() {
   const [video, setVideo] = useState([]);
