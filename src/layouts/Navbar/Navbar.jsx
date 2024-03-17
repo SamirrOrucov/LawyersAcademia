@@ -14,19 +14,11 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", stickNavbar);
     };
-  }, [isSideBarOpen, stickyNav]);
-
+  }, []);
   const stickNavbar = () => {
-    if (typeof window !== "undefined") {
+    if (window !== undefined) {
       let windowHeight = window.scrollY;
-      setStickyNav(windowHeight > 100);
-      setIsSideBarOpen(false);
-      setStickyNav((prevStickyNav) => {
-        document.querySelector(".sidebar").style.top = prevStickyNav
-          ? "0"
-          : "45.5px";
-        return prevStickyNav;
-      });
+      windowHeight > 100 ? setStickyNav(true) : setStickyNav(false);
     }
   };
   function handleChange(value) {
@@ -35,7 +27,6 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar_container">
-       
         <div className={`navbarBot  ${stickyNav ? "fixed" : ""}`}>
           <div className="navbarBot_bottom">
             <div className="navbarBot_logo">
