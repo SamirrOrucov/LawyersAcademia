@@ -1,6 +1,6 @@
 import React from "react";
-import AboutSliderSection from "../components/AboutSliderSection/AboutSliderSection";
-import ContactUsComponent from "../components/ContactUsComponent/ContactUsComponent";
+import AboutSliderSection from "../components/HomeComponents/AboutSliderSection/AboutSliderSection";
+import ContactUsComponent from "../components/HomeComponents/ContactUsComponent/ContactUsComponent";
 import VideosSection from "../components/HomeComponents/VideosSection/VideosSection";
 
 function Home() {
