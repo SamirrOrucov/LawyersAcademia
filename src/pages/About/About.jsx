@@ -5,10 +5,10 @@ function About() {
   return (
     <div className="about">
       <div className="about_container">
-        <div className="about_header">
+        {/* <div className="about_header">
           <img src="../src/assets/image/header.png" alt="" />
           <div className="about_header_gradient"></div>
-        </div>
+        </div> */}
         <div className="about_main">
           <div className="about_main_title">
             <p>Haqqımızda</p>

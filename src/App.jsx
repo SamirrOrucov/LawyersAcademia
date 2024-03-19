@@ -4,6 +4,7 @@ import MainLayout from "./layouts/MainLayout/MainLayout";
 import About from "./pages/About/About";
 import News from "./pages/News/News";
 import NewsDetail from "./pages/NewsDetail/NewsDetail";
+import Qanunvericilik from "./pages/Qanunvericilik/Qanunvericilik";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route path="/haqqimizda" element={<About />} />
           <Route path="/xeberler" element={<News/>}/>
           <Route path="/xeberlerdetail/:id" element={<NewsDetail />} />
+          <Route path="/qanunvericilik" element={<Qanunvericilik/>}/>
+
           </Route>
         </Routes>
       </BrowserRouter>

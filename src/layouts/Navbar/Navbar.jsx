@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.scss";
 import { Select } from "antd";
 const { Option } = Select;
@@ -29,22 +29,23 @@ function Navbar() {
       <div className="navbar_container">
         <div className={`navbarBot  ${stickyNav ? "fixed" : ""}`}>
           <div className="navbarBot_bottom">
-            <div className="navbarBot_logo">
-              <img src="../src/assets/image/lawyerAcademia-logo.png" alt="" />
-            </div>
+            <Link to={"/"}>
+              <div className="navbarBot_logo">
+                <img src="../src/assets/image/lawyerAcademia-logo.png" alt="" />
+                <div className="navbarBot_logo_text">
+                  <p className="navbarBot_logo_text_gray">
+                    <span className="gray">A</span>ZƏRBAYCAN{" "}
+                    <span className="gray">R</span>ESPUBLİKASININ
+                  </p>
+                  <p className="navbarBot_logo_text_blue">
+                    <span className="blue">V</span>ƏKİLLƏR{" "}
+                    <span className="blue">K</span>OLLEGİYASI{" "}
+                    <span className="blue">A</span>KADEMİYASI
+                  </p>
+                </div>
+              </div>
+            </Link>
             <ul className="navbarBot_navmenu">
-              <li>
-                <NavLink
-                  to="/"
-                  style={({ isActive }) => {
-                    return {
-                      color: isActive ? "#0176ff" : "",
-                    };
-                  }}
-                >
-                  Əsas səhifə
-                </NavLink>
-              </li>
               <li>
                 <NavLink
                   to="/haqqimizda"
@@ -55,18 +56,6 @@ function Navbar() {
                   }}
                 >
                   Haqqımızda
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/qanunvericilik"
-                  style={({ isActive }) => {
-                    return {
-                      color: isActive ? "#0176ff" : "",
-                    };
-                  }}
-                >
-                  Qanunvericilik
                 </NavLink>
               </li>
               <li>
@@ -95,6 +84,18 @@ function Navbar() {
               </li>
               <li>
                 <NavLink
+                  to="/qanunvericilik"
+                  style={({ isActive }) => {
+                    return {
+                      color: isActive ? "#0176ff" : "",
+                    };
+                  }}
+                >
+                  Qanunvericilik
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/jurnallar"
                   style={({ isActive }) => {
                     return {
@@ -117,7 +118,6 @@ function Navbar() {
                   Elektron kitabxana
                 </NavLink>
               </li>
-              
             </ul>
             <div className="navbarBot_login_lang">
               <div className="navbarBot_lang">
@@ -127,10 +127,11 @@ function Navbar() {
                   onChange={handleChange}
                   className="navbarBot_lang_select"
                 >
-                  <Option className="navbarBot_lang_option" value="aze">Azərbaycan</Option>
+                  <Option className="navbarBot_lang_option" value="aze">
+                    Azərbaycan
+                  </Option>
                   <Option value="eng">English</Option>
                   <Option value="rus">Русский</Option>
-               
                 </Select>
               </div>
               <div className="navbarBot_login">
@@ -165,17 +166,17 @@ function Navbar() {
               </NavLink>
             </li>
             <li>
-                <NavLink
-                  to="/haqqimizda"
-                  style={({ isActive }) => {
-                    return {
-                      color: isActive ? "#0176ff" : "",
-                    };
-                  }}
-                >
-                  Haqqımızda
-                </NavLink>
-              </li>
+              <NavLink
+                to="/haqqimizda"
+                style={({ isActive }) => {
+                  return {
+                    color: isActive ? "#0176ff" : "",
+                  };
+                }}
+              >
+                Haqqımızda
+              </NavLink>
+            </li>
             <li>
               <NavLink
                 to="/qanunvericilik"
@@ -189,17 +190,17 @@ function Navbar() {
               </NavLink>
             </li>
             <li>
-                <NavLink
-                  to="/heyet"
-                  style={({ isActive }) => {
-                    return {
-                      color: isActive ? "#0176ff" : "",
-                    };
-                  }}
-                >
-                  Heyət
-                </NavLink>
-              </li>
+              <NavLink
+                to="/heyet"
+                style={({ isActive }) => {
+                  return {
+                    color: isActive ? "#0176ff" : "",
+                  };
+                }}
+              >
+                Heyət
+              </NavLink>
+            </li>
             <li>
               <NavLink
                 to="/xeberler"
@@ -236,11 +237,21 @@ function Navbar() {
                 Elektron kitabxana
               </NavLink>
             </li>
-            
           </ul>
           <div className="sidebar_login">
             <i className="fa-solid fa-user"></i>
             <p>Şəxsi kabinet</p>
+          </div>
+          <div className="sidebar_lang">
+            <Select
+              defaultValue="Azərbaycan"
+              style={{ width: 150 }}
+              onChange={handleChange}
+            >
+              <Option value="aze">Azərbaycan</Option>
+              <Option value="eng">English</Option>
+              <Option value="rus">Русский</Option>
+            </Select>
           </div>
         </div>
       </div>
