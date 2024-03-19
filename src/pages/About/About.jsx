@@ -37,41 +37,43 @@ function About() {
               </p>
               <p className="about_content_desc">
                 -Vəkillərin peşə hazırlığı və səviyyəsinin artırılması üçün
-                tədbirlər.<br/> -Ixtisaslaşma tərəfdaşlığının dərinləşdirilməsi və
-                beynəlxalq təlimlər. <br/>-Beynəlxalq təcrübənin mənimsənilməsi və
-                hüquqi maarifləndirmə.<br/> -Vəkil köməkçisi institutunun formalaşması
-                və tədris tədbirləri. <br/>-Vəkillik fəaliyyətini ümumiləşdirmək üçün
-                statistika və məlumatlar. <br/>-Beynəlxalq məhkəmə qərarlarının
-                təhlili və dərci. <br/>-Vəkillər arasında ixtisaslaşmanın əsasının
-                yaradılması və təhsil proqramları. <br/>-Hüquqi müsabiqələr, məktəblər
-                və beynəlxalq təcrübə layihələri. <br/>-Vəkillərin elmi və yaradıcılıq
-                fəaliyyəti üçün tədbirlər. <br/>-Vəkillərin peşə fəaliyyətinin
-                yüksəldilməsi üçün yeni texnologiyaların tətbiqi.
+                tədbirlər.
+                <br /> -Ixtisaslaşma tərəfdaşlığının dərinləşdirilməsi və
+                beynəlxalq təlimlər. <br />
+                -Beynəlxalq təcrübənin mənimsənilməsi və hüquqi maarifləndirmə.
+                <br /> -Vəkil köməkçisi institutunun formalaşması və tədris
+                tədbirləri. <br />
+                -Vəkillik fəaliyyətini ümumiləşdirmək üçün statistika və
+                məlumatlar. <br />
+                -Beynəlxalq məhkəmə qərarlarının təhlili və dərci. <br />
+                -Vəkillər arasında ixtisaslaşmanın əsasının yaradılması və
+                təhsil proqramları. <br />
+                -Hüquqi müsabiqələr, məktəblər və beynəlxalq təcrübə layihələri.{" "}
+                <br />
+                -Vəkillərin elmi və yaradıcılıq fəaliyyəti üçün tədbirlər.{" "}
+                <br />
+                -Vəkillərin peşə fəaliyyətinin yüksəldilməsi üçün yeni
+                texnologiyaların tətbiqi.
               </p>
             </div>
             <div className="about_content">
               <p className="about_content_title">
-                <span>Təşkilati </span>Yapı və İdarəetmə:
+                <span>Təşkilati </span>Sistem və İdarəetmə:
               </p>
               <p className="about_content_desc">
-                Akademiyada 3 kafedra – 1) mülki; 2) cinayət; 3) prosessual
+                Akademiyada 3 kafedra – mülki , cinayət , prosessual –
                 kafedralar və hüquq klinikası fəaliyyət göstərir. Akademiya
                 20-dən çox elmlər doktorunu, 50-dən artıq fəlsəfə doktorunu
-                özündə birləşdirir.Akademiyaya rektor rəhbərlik edir. 20 oktyabr
-                2023-cü il Vəkillər Kollegiyasının Rəyasət Heyətinin qərarı ilə
-                h.e.d., prof. Əmir Əliyev Akademiyanın rektoru təyin edilmişdir.
+                özündə birləşdirir.Akademiyaya rektor rəhbərlik edir.
               </p>
             </div>
             <div className="about_content">
               <p className="about_content_title">
-                <span>Ünvan</span> və Büdcə:
+                <span>Ünvan</span> və Əlaqə:
               </p>
               <p className="about_content_desc">
                 Akademiya Bakı şəhəri, Nəsimi rayonu, Səməd Vurğun küçəsi 32
-                ünvanında yerləşir. Akademiyanın büdcəsi Vəkillər Kollegiyasının
-                daxili imkanlarından edilən köçürmələr, ianə və qrantlar,
-                göstərilən xidmətlərdən alınan haqq formalaşır hesabına
-                formalaşır.
+                ünvanında yerləşir. 
               </p>
             </div>
           </div>

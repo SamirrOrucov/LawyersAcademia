@@ -37,82 +37,7 @@ function AboutSliderComponent() {
               </div>
             </Link>
           </SwiperSlide>
-          <SwiperSlide className="swiper_slide">
-            <img
-              src="https://www.e-huquq.az/media/2022/08/17/vekillerkollegiyasi2.jpg"
-              alt=""
-            />
-            <div className="text">
-              Kollegiyanın üzvü, professor, hüquq elmləri doktoru Əmir Əliyevin
-              Akademiyanın rəhbəri təyin edilib.
-            </div>
-            <Link to={"/"}>
-              <div className="aboutSlider_btn">
-                <button>
-                  Daha <span>ətraflı</span>
-                </button>
-                <div className="hoverOne"></div>
-                <div className="hoverTwo"></div>
-              </div>
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide className="swiper_slide">
-            <img
-              src="https://www.e-huquq.az/media/2022/08/17/vekillerkollegiyasi2.jpg"
-              alt=""
-            />
-            <div className="text">
-              Kollegiyanın üzvü, professor, hüquq elmləri doktoru Əmir Əliyevin
-              Akademiyanın rəhbəri təyin edilib.
-            </div>
-            <Link to={"/"}>
-              <div className="aboutSlider_btn">
-                <button>
-                  Daha <span>ətraflı</span>
-                </button>
-                <div className="hoverOne"></div>
-                <div className="hoverTwo"></div>
-              </div>
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide className="swiper_slide">
-            <img
-              src="https://www.e-huquq.az/media/2022/08/17/vekillerkollegiyasi2.jpg"
-              alt=""
-            />
-            <div className="text">
-              Kollegiyanın üzvü, professor, hüquq elmləri doktoru Əmir Əliyevin
-              Akademiyanın rəhbəri təyin edilib.
-            </div>
-            <Link to={"/"}>
-              <div className="aboutSlider_btn">
-                <button>
-                  Daha <span>ətraflı</span>
-                </button>
-                <div className="hoverOne"></div>
-                <div className="hoverTwo"></div>
-              </div>
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide className="swiper_slide">
-            <img
-              src="https://www.e-huquq.az/media/2022/08/17/vekillerkollegiyasi2.jpg"
-              alt=""
-            />
-            <div className="text">
-              Kollegiyanın üzvü, professor, hüquq elmləri doktoru Əmir Əliyevin
-              Akademiyanın rəhbəri təyin edilib.
-            </div>
-            <Link to={"/"}>
-              <div className="aboutSlider_btn">
-                <button>
-                  Daha <span>ətraflı</span>
-                </button>
-                <div className="hoverOne"></div>
-                <div className="hoverTwo"></div>
-              </div>
-            </Link>
-          </SwiperSlide>
+          
         </Swiper>
       </div>
     </div>
@@ -120,3 +45,4 @@ function AboutSliderComponent() {
 }
 
 export default AboutSliderComponent;
+
