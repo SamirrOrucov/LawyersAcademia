@@ -127,8 +127,9 @@ export default function ContactUsComponent() {
                 >
                   <Upload
                     name="upload"
-                    // action="http://localhost:3003/upload"
+                    action="http://localhost:3003/upload"
                     listType="picture"
+                    beforeUpload={()=>false}
                   >
                     <Button icon={<UploadOutlined />}>Fayl seçin</Button>
                   </Upload>
