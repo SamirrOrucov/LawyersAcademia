@@ -15,7 +15,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/haqqimizda" element={<About />} />
           <Route path="/xeberler" element={<News/>}/>
-          <Route path="/xeberlerdetail/:id" element={<NewsDetail />} />
+          <Route path="/detail/:id" element={<NewsDetail />} />
           <Route path="/qanunvericilik" element={<Qanunvericilik/>}/>
 
           </Route>
