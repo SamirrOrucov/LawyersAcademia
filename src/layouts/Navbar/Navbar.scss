@@ -17,7 +17,7 @@
           gap: 30px;
           align-items: center;
           li {
-            font-size: 16px;
+            font-size: 14px;
             letter-spacing: 0.5px;
             transition: 300ms;
             color: #262626;
@@ -91,9 +91,28 @@
           }
         }
         .navbarBot_logo {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
           img {
             width: 60px;
             transition: 1ms;
+          }
+          &_text {
+            p {
+              font-size: 10px;
+              font-weight: 500;
+              span {
+                font-size: 13px;
+              }
+            }
+            &_gray {
+              color: gray;
+            }
+            &_blue {
+              color: #0176ff;
+            }
           }
         }
       }
@@ -122,22 +141,25 @@
         flex-direction: column;
         li {
           border-bottom: 1px solid gray;
-          padding: 15px 0px;
+          padding: 10px 0px;
           color: lightgray;
         }
       }
       &_login {
-        display: flex;
+        display: none;
         gap: 5px;
         align-items: center;
         padding: 10px;
         background-color: #0176ff;
         color: white;
         cursor: pointer;
-        margin-top: 15px;
+        margin: 15px 0px;
         .fa-user {
           font-size: 14px;
         }
+      }
+      &_lang {
+        display: none;
       }
     }
   }
@@ -162,37 +184,108 @@
   padding: 0px 5px;
 }
 
-@media (max-width: 476px) {
-  .navbar_container {
-    .navbar_upside_bg {
-      .navbar_upside {
-        &_text {
-          font-size: 11px;
-          width: 200px;
+@media (max-width: 374.98px) {
+  .navbar {
+    .navbar_container {
+      .navbarBot {
+        &_bottom {
+          .navbarBot_navmenu {
+            display: none;
+          }
+          .navbarBot_login_lang {
+            .navbarBot_lang {
+              display: none;
+            }
+            .navbarBot_login {
+              display: none;
+            }
+          }
+          .navbarBot_logo {
+            img {
+              width: 45px !important;
+            }
+            &_text {
+              p {
+                font-size: 9px;
+                span {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 200px;
+        background-color: #262626;
+        border-top: 1px solid rgba(128, 128, 128, 0.245);
+        padding: 25px;
+        z-index: 4;
+        transition: 300ms;
+        &_exit {
+          display: flex;
+          justify-content: flex-end;
+          i {
+            color: gray;
+            font-size: 18px;
+          }
+        }
+        &_nav {
+          display: flex;
+          flex-direction: column;
+          li {
+            border-bottom: 1px solid gray;
+            padding: 15px 0px;
+            color: lightgray;
+          }
+        }
+        &_login {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+          padding: 10px;
+          background-color: #0176ff;
+          color: white;
+          cursor: pointer;
+          margin-top: 15px;
+          .fa-user {
+            font-size: 14px;
+          }
         }
       }
     }
   }
 }
-@media (max-width: 588.98px) {
+@media (min-width: 375px) and (max-width: 645px) {
   .navbar {
     .navbar_container {
-      .navbar_upside_bg {
-        .navbar_upside {
-          &_text {
-            font-size: 13px;
-          text-align: center;
-          padding: 0px 3px;
-          }
-        }
-      }
       .navbarBot {
         &_bottom {
+          .navbarBot_login_lang {
+            .navbarBot_lang {
+              display: none;
+            }
+            .navbarBot_login {
+              display: none;
+            }
+          }
           .navbarBot_logo {
             img {
               width: 50px !important;
             }
           }
+        }
+      }
+      .sidebar {
+        &_login {
+          display: flex;
+        }
+        &_lang {
+          display: block;
         }
       }
     }
@@ -203,17 +296,6 @@
     .navbar_container {
       .navbarBot {
         &_bottom {
-          .navbarBot_navmenu {
-            display: none !important;
-          }
-          .navbarBot_login_lang {
-            .fa-bars {
-              display: block;
-            }
-            .navbarBot_login {
-              display: none !important;
-            }
-          }
           .navbarBot_logo {
             img {
               width: 55px;
@@ -224,35 +306,17 @@
     }
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1260px) {
   .navbar {
     .navbar_container {
       .navbarBot {
         &_bottom {
           .navbarBot_navmenu {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            li {
-              font-size: 13px;
-            }
+            display: none;
           }
           .navbarBot_login_lang {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-            .navbarBot_login {
-              display: flex;
-              gap: 5px;
-              align-items: center;
-              padding: 5px;
-              background-color: #0176ff;
-              color: white;
-              cursor: pointer;
-              font-size: 13px;
-              .fa-user {
-                font-size: 12px;
-              }
+            .fa-bars {
+              display: block;
             }
           }
         }
@@ -260,7 +324,7 @@
     }
   }
 }
-@media (min-width: 1200px) and (max-width: 1360px) {
+@media (min-width: 1260px) and (max-width: 1360px) {
   .navbar {
     .navbar_container {
       .navbarBot {
@@ -270,7 +334,7 @@
             gap: 20px;
             align-items: center;
             li {
-              font-size: 14px;
+              font-size: 13px;
             }
           }
         }

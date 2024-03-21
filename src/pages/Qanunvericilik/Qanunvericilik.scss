@@ -1,0 +1,245 @@
+.qanunvericilik {
+  max-width: 100%;
+  min-height: 60vh;
+  &_container {
+    max-width: 85%;
+    margin: 50px auto;
+    .qanunvericilik_header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 30px 0px;
+      p {
+        font-size: 28px;
+        font-weight: 700;
+      }
+      .lines {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 170px;
+        .line {
+          height: 1.5px;
+          background-color: #1980b6;
+        }
+        .One {
+          width: 170px;
+        }
+        .Two {
+          width: 167px;
+        }
+        .Three {
+          width: 164px;
+        }
+        .Four {
+          width: 161px;
+        }
+        .Five {
+          width: 158px;
+        }
+      }
+    }
+    &_main {
+      max-width: 60%;
+      margin: 100px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      a {
+        .link {
+          max-width: 100%;
+          min-height: 50px;
+          background-color: #1980b6;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: 400ms;
+          &:hover {
+            background-color: #197fb6cb;
+          }
+
+          color: white;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .qanunvericilik {
+    max-width: 100%;
+    min-height: 60vh;
+    &_container {
+      max-width: 85%;
+      margin: 50px auto;
+      .qanunvericilik_header {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 30px 0px;
+        p {
+          font-size: 20px;
+          font-weight: 700;
+        }
+        .lines {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 150px;
+          .line {
+            height: 1.5px;
+            background-color: #1980b6;
+          }
+          .One {
+            width: 150px;
+          }
+          .Two {
+            width: 147px;
+          }
+          .Three {
+            width: 144px;
+          }
+          .Four {
+            width: 141px;
+          }
+          .Five {
+            width: 138px;
+          }
+        }
+      }
+      &_main {
+        max-width: 85%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        a {
+          .link {
+            max-width: 100%;
+            min-height: 40px;
+            background-color: #1980b6;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 400ms;
+            &:hover {
+              background-color: #197fb6cb;
+            }
+
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .qanunvericilik {
+    max-width: 100%;
+    min-height: 50vh;
+    &_container {
+      max-width: 85%;
+      margin: 50px auto;
+      .qanunvericilik_header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 30px 0px;
+        p {
+          font-size: 24px;
+          font-weight: 700;
+        }
+        .lines {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 170px;
+          .line {
+            height: 1.5px;
+            background-color: #1980b6;
+          }
+          .One {
+            width: 170px;
+          }
+          .Two {
+            width: 167px;
+          }
+          .Three {
+            width: 164px;
+          }
+          .Four {
+            width: 161px;
+          }
+          .Five {
+            width: 158px;
+          }
+        }
+      }
+      &_main {
+        max-width: 70%;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        a {
+          .link {
+            max-width: 100%;
+            min-height: 40px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .qanunvericilik {
+    max-width: 100%;
+    min-height: 60vh;
+    &_container {
+      max-width: 85%;
+      margin: 50px auto;
+
+      &_main {
+        max-width: 60%;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        a {
+          .link {
+            max-width: 100%;
+            min-height: 50px;
+            background-color: #1980b6;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 400ms;
+            &:hover {
+              background-color: #197fb6cb;
+            }
+
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

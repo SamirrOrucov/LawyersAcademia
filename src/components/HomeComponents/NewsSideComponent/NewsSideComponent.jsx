@@ -36,7 +36,8 @@ function NewsSideComponent() {
               <div className="newsInfo">
                 <div className="title">{item.title}</div>
                 <div className="link">
-                  <Link>Daha ətraflı..</Link>
+              <Link to={"/detail/" + item._id}>Daha ətraflı  </Link>
+
                 </div>
               </div>
             </div>

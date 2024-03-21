@@ -28,34 +28,34 @@
         margin-left: 75px;
         .line {
           height: 1px;
-          background-color: #1980B6;
+          background-color: #1980b6;
         }
-        .One{
-            width: 205px;
-            height: 2px;
+        .One {
+          width: 205px;
+          height: 2px;
         }
-        .Two{
+        .Two {
           height: 2px;
 
-            width: 202px;
+          width: 202px;
         }
-        .Three{
+        .Three {
           height: 2px;
 
-            width: 199px;
+          width: 199px;
         }
-        .Four{
+        .Four {
           height: 2px;
 
-            width: 196px;
+          width: 196px;
         }
-        .Five{
-            width: 193px;
+        .Five {
+          width: 193px;
         }
       }
     }
     .statisticCards {
-      margin-top: 70px;
+      margin-top: 90px !important;
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
@@ -105,27 +105,34 @@
 @media (max-width: 575.98px) {
   .statisticsComponent {
     max-width: 100%;
-    margin: 70px auto;
+    margin-top: 30px;
+    // margin:30px auto;
     &_container {
       padding-left: 20px;
+      margin: 0 auto;
       .headOfStatistics {
         text-align: start;
         max-width: 100%;
         .factsFirst {
-          font-size: 12px;
+          font-size: 12px !important;
           color: hsl(201, 76%, 41%);
           font-weight: 500;
         }
         .factsSecond {
-          font-size: 22px;
+          font-size: 15px !important;
           font-weight: 700;
+          width: 200px;
+
           span {
             color: #1980b6;
           }
         }
+        .lines {
+          width: 30px !important;
+        }
       }
       .statisticCards {
-        margin-top: 50px;
+        margin-top: 50px !important;
         display: flex;
         flex-wrap: wrap;
         gap: 40px;
@@ -164,6 +171,112 @@
             color: white;
             padding: 5px 25px;
             font-size: 18px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  
+  .statisticsComponent {
+    max-width: 100%;
+    margin: 130px auto;
+    &_container {
+      .headOfStatistics {
+        text-align: start;
+        max-width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .factsFirst {
+          font-size: 14px;
+          color: #1980b6;
+          font-weight: 500;
+        }
+        .factsSecond {
+          font-size: 30px;
+          font-weight: 700;
+          span {
+            color: #1980b6;
+          }
+        }
+        .lines {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 55px;
+          margin-left: 75px;
+          .line {
+            height: 1px;
+            background-color: #1980b6;
+          }
+          .One {
+            width: 205px;
+            height: 2px;
+          }
+          .Two {
+            height: 2px;
+  
+            width: 202px;
+          }
+          .Three {
+            height: 2px;
+  
+            width: 199px;
+          }
+          .Four {
+            height: 2px;
+  
+            width: 196px;
+          }
+          .Five {
+            width: 193px;
+          }
+        }
+      }
+      .statisticCards {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 40px;
+        .statisticCard {
+          width: 350px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+            rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          height: 150px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 20px;
+          gap: 20px;
+          font-weight: 500;
+          color: rgb(0, 0, 0);
+          background-color: #ffffff;
+          transition: 300ms;
+          span {
+            color: black;
+          }
+          cursor: default;
+          &:nth-child(even) {
+            background-color: #1980b6;
+            color: white;
+            span {
+              color: white;
+            }
+          }
+          &:hover {
+            scale: 110%;
+          }
+          svg {
+            font-size: 24px;
+          }
+          .number {
+            color: white;
+            padding: 5px 25px;
+            font-size: 20px;
             font-weight: 700;
           }
         }

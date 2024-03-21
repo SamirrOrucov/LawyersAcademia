@@ -43,7 +43,7 @@ function NewsCard() {
             </div>
             <div className="newsCard_info_btn">
               <p className="newsCard_link">
-              <Link to={"/xeberlerdetail/" + x._id}>Daha ətraflı </Link>
+              <Link to={"/detail/" + x._id}>Daha ətraflı </Link>
               </p>
               <i className="fa-solid fa-arrow-right-long"></i>
             </div>

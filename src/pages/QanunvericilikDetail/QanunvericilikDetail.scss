@@ -1,0 +1,188 @@
+.qanunvericilikDetail {
+  max-width: 100vw;
+  &_container {
+    max-width: 85%;
+    margin: 50px auto;
+    &_header {
+      font-size: 12px;
+      a {
+        color: #878686;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+      }
+      span {
+        font-family: "Montserrat", sans-serif;
+        color: #197fb6cb;
+        cursor: pointer;
+        font-weight: 600;
+      }
+    }
+    &_main {
+      margin-top: 50px;
+      min-height: 50vh;
+      .headOfMain {
+        text-align: center;
+        font-weight: 600;
+        font-size: 28px;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 50px;
+      }
+      &_links {
+        color: #197fb6cb;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        transition: 300ms;
+        letter-spacing: 1px;
+        &:hover {
+          color: #197fb67d;
+        }
+        .linIcon {
+          font-size: 22px;
+        }
+        a {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+    .qanunvericilikDetail {
+        max-width: 100vw;
+        &_container {
+          max-width: 85%;
+          margin: 50px auto;
+          &_header {
+            font-size: 8px;
+            a {
+              color: #878686;
+              font-weight: 500;
+              font-family: "Montserrat", sans-serif;
+            }
+            span {
+              font-family: "Montserrat", sans-serif;
+              color: #197fb6cb;
+              cursor: pointer;
+              font-weight: 600;
+            }
+          }
+          &_main {
+            margin-top: 50px;
+            min-height: 50vh;
+            .headOfMain {
+              text-align: center;
+              font-weight: 600;
+              font-size: 18px;
+              font-family: "Montserrat", sans-serif;
+              margin-bottom: 50px;
+            }
+            &_links {
+              color: #197fb6cb;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              margin-top: 10px;
+              transition: 300ms;
+              letter-spacing: 1px;
+              font-size: 10px;
+              &:hover {
+                color: #197fb67d;
+              }
+              .linIcon {
+                font-size: 25px;
+              }
+              a {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .qanunvericilikDetail {
+        max-width: 100vw;
+        &_container {
+          max-width: 85%;
+          margin: 50px auto;
+       
+          &_main {
+            margin-top: 50px;
+            min-height: 50vh;
+            .headOfMain {
+              text-align: center;
+              font-weight: 600;
+              font-size: 23px;
+              font-family: "Montserrat", sans-serif;
+              margin-bottom: 50px;
+            }
+            &_links {
+              color: #197fb6cb;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              margin-top: 10px;
+              transition: 300ms;
+              letter-spacing: 1px;
+              font-size: 12px;
+              &:hover {
+                color: #197fb67d;
+              }
+              .linIcon {
+                font-size: 25px;
+              }
+              a {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .qanunvericilikDetail {
+        max-width: 100vw;
+        &_container {
+          max-width: 85%;
+          margin: 50px auto;
+       
+          &_main {
+            margin-top: 50px;
+            min-height: 50vh;
+            .headOfMain {
+              text-align: center;
+              font-weight: 600;
+              font-size: 26px;
+              font-family: "Montserrat", sans-serif;
+              margin-bottom: 50px;
+            }
+            &_links {
+              color: #197fb6cb;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              margin-top: 10px;
+              transition: 300ms;
+              letter-spacing: 1px;
+              font-size: 14px;
+              &:hover {
+                color: #197fb67d;
+              }
+              .linIcon {
+                font-size: 25px;
+              }
+              a {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+  }
+  
+ 
