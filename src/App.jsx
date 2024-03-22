@@ -5,6 +5,7 @@ import About from "./pages/About/About";
 import News from "./pages/News/News";
 import NewsDetail from "./pages/NewsDetail/NewsDetail";
 import Qanunvericilik from "./pages/Qanunvericilik/Qanunvericilik";
+import Heyet from "./pages/Heyet/Heyet";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Route path="/xeberler" element={<News/>}/>
           <Route path="/xeberlerdetail/:id" element={<NewsDetail />} />
           <Route path="/qanunvericilik" element={<Qanunvericilik/>}/>
-
+          <Route path="/heyet" element={<Heyet/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
