@@ -14,9 +14,14 @@ export default function ContactUsComponent() {
       Object.entries(values).forEach(([key, value]) => {
         console.log(values);
         if (key === "upload") {
-          value.forEach((file) => {
-            formData.append("upload", file.originFileObj);
-          });
+          if (value) {
+            value.forEach((file) => {
+              formData.app;
+              end("upload", file.originFileObj);
+            });
+          } else {
+            return;
+          }
         } else {
           formData.append(key, value);
         }
@@ -127,8 +132,9 @@ export default function ContactUsComponent() {
                 >
                   <Upload
                     name="upload"
-                    // action="http://localhost:3003/upload"
+                    action="http://localhost:3003/upload"
                     listType="picture"
+                    beforeUpload={() => false}
                   >
                     <Button icon={<UploadOutlined />}>Fayl seçin</Button>
                   </Upload>

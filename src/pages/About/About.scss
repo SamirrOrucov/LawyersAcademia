@@ -2,7 +2,7 @@
   max-width: 100%;
   &_container {
     max-width: 85%;
-    margin: 0 auto;
+    margin: 50px auto;
     .about_header {
       position: relative;
       img {
@@ -183,32 +183,5 @@
   }
 }
 
-@media (max-width: 991.98px) {
-  .about {
-    .about_container {
-      // .about_header {
-      //   img {
-      //     height: 30vh;
-      //   }
-      //   .about_header_gradient {
-      //     height: 30vh;
-      //   }
-      // }
-    }
-  }
-}
 
-@media (max-width: 1160px) {
-  .about {
-    &_container {
-      // .about_header {
-      //   img {
-      //     height: 40vh;
-      //   }
-      //   &_gradient {
-      //     height: 40vh;
-      //   }
-      // }
-    }
-  }
-}
+
