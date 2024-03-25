@@ -13,6 +13,14 @@ function HeyetCard() {
     getFetchTeam();
   }, []);
 
+  const handleCall = (phone) => {
+    window.location.href = `tel:${phone}`;
+  };
+
+  const handleEmailClick = (email) => {
+    window.location.href = `mailto:${email}`;
+  };
+
   return (
     <>
       {teamCard.map((x) => (
@@ -24,9 +32,14 @@ function HeyetCard() {
             <p className="heyetCard_textBox_name">{x.name}</p>
             <p className="heyetCard_textBox_job">{x.role}</p>
             <div className="heyetCard_textBox_social">
-              <i className="fa-brands fa-instagram"></i>
-              <i className="fa-brands fa-facebook"></i>
-              <i className="fa-brands fa-linkedin"></i>
+              <i
+                onClick={() => handleCall(x.phone)}
+                className="fa-solid fa-phone"
+              ></i>
+              <i
+                onClick={() => handleEmailClick(x.email)}
+                className="fa-regular fa-envelope"
+              ></i>
             </div>
           </div>
         </div>
