@@ -1,0 +1,57 @@
+.heyetCard {
+  width: 220px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  &_img {
+    width: 220px;
+    height: 220px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &_textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_name {
+      font-weight: 600;
+    }
+    &_job {
+      color: rgb(80, 80, 80);
+      padding: 5px 0px 15px 0px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    &_social {
+      display: flex;
+      gap: 10px;
+      i {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgray;
+        border-radius: 50%;
+        font-size: 14px;
+        color: gray;
+        cursor: pointer;
+        transition: 300ms;
+        &:hover {
+          color: #0176ff;
+          background-color: #0178ff89;
+        }
+      }
+      .fa-phone {
+        font-size: 13px;
+      }
+    }
+  }
+}

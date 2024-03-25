@@ -1,0 +1,50 @@
+.heyet {
+    max-width: 100%;
+  &_container {
+    max-width: 85%;
+    margin: 50px auto;
+    .heyet_header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 30px 0px;
+      p {
+        font-size: 28px;
+        font-weight: 700;
+      }
+      .lines {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        .line {
+          height: 1.5px;
+          background-color: #1980b6;
+        }
+        .One {
+          width: 100px;
+        }
+        .Two {
+          width: 97px;
+        }
+        .Three {
+          width: 94px;
+        }
+        .Four {
+          width: 91px;
+        }
+        .Five {
+          width: 88px;
+        }
+      }
+    }
+    .heyetCards{
+      margin: 30px auto;
+      max-width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      // justify-content: space-between;
+    }
+  }
+}
