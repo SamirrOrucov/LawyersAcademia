@@ -37,11 +37,14 @@ function QanunvericilikDetail() {
           </div>
           <div className="qanunvericilikDetail_container_main">
             <p className="headOfMain">{legislation.title}</p>
-            {law.map((item) => (
-              <div className="qanunvericilikDetail_container_main_links">
-                <MdLink className="linIcon" /> <Link to={item.link}>{item.title}</Link>
-              </div>
-            ))}
+            {law.length
+              ? law.map((item) => (
+                  <div className="qanunvericilikDetail_container_main_links">
+                    <MdLink className="linIcon" />{" "}
+                    <Link to={item.link}>{item.title}</Link>
+                  </div>
+                ))
+              : <Link to={"/qanunvericilik"}><h4>Məlumat yoxdur!</h4></Link> }
           </div>
         </div>
       </div>
