@@ -255,3 +255,18 @@
     }
   }
 }
+
+@media (min-width: 1640px) {
+  .footer {
+    &_container {
+      .footer_upside {
+        .footer_location {
+          height: 25vh;
+          iframe {
+            height: 25vh;
+          }
+        }
+      }
+    }
+  }
+}

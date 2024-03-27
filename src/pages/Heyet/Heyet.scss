@@ -1,5 +1,5 @@
 .heyet {
-    max-width: 100%;
+  max-width: 100%;
   &_container {
     max-width: 85%;
     margin: 50px auto;
@@ -38,13 +38,98 @@
         }
       }
     }
-    .heyetCards{
+    .heyetCards {
       margin: 30px auto;
       max-width: 80%;
       display: flex;
       flex-wrap: wrap;
-      gap: 50px;
-      // justify-content: space-between;
+      gap: 185px;
+      row-gap: 100px;
+      justify-content: center;
+      // border: 1px solid black;
     }
   }
 }
+
+@media (min-width: 723px) and (max-width: 796.98px) {
+  .heyet {
+    &_container {
+      .heyetCards {
+        max-width: 80%;
+        gap: 50px;
+        row-gap: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 797px) and (max-width: 943.98px) {
+  .heyet {
+    &_container {
+      .heyetCards {
+        max-width: 80%;
+        gap: 100px;
+        row-gap: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 944px) and (max-width: 1119.98px) {
+  .heyet {
+    &_container {
+      .heyetCards {
+        max-width: 80%;
+        gap: 200px;
+        row-gap: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1266.98px) {
+  .heyet {
+    &_container {
+      .heyetCards {
+        max-width: 80%;
+        gap: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1267px) and (max-width: 1413.98px) {
+  .heyet {
+    &_container {
+      .heyetCards {
+        max-width: 80%;
+        gap: 100px;
+        row-gap: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1414px) and (max-width: 1517.98px) {
+  .heyet {
+    &_container {
+      .heyetCards {
+        max-width: 80%;
+        gap: 150px;
+        row-gap: 50px;
+      }
+    }
+  }
+}
+
+// @media (min-width: 1518px) {
+//   .heyet {
+//     &_container {
+//       .heyetCards {
+//         max-width: 80%;
+//         gap: 50px;
+//         row-gap: 50px;
+//       }
+//     }
+//   }
+// }
