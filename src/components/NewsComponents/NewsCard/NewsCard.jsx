@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./NewsCard.scss";
 import { Link } from "react-router-dom";
 import ReactPaginate from "react-paginate";
+import { FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft } from "react-icons/fa";
 
 function NewsCard() {
   const [newsCard, setNewsCard] = useState([]);
@@ -41,7 +43,7 @@ function NewsCard() {
             </div>
             <div className="newsCard_info_btn">
               <p className="newsCard_link">
-              <Link to={"/xeberlerdetail/" + x._id}>Daha ətraflı </Link>
+              <Link to={"/detail/" + x._id}>Daha ətraflı </Link>
               </p>
               <i className="fa-solid fa-arrow-right-long"></i>
             </div>
@@ -50,11 +52,11 @@ function NewsCard() {
       ))}
       <ReactPaginate
         breakLabel="..."
-        nextLabel=" >"
+        nextLabel={<FaChevronRight/>}
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
         pageCount={pageCount}
-        previousLabel="<"
+        previousLabel={<FaChevronLeft/>}
         renderOnZeroPageCount={null} 
         activeLinkClassName={' activePage '}
         className="ReactPaginate"

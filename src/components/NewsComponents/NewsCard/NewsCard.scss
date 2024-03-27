@@ -63,6 +63,13 @@
     align-items: center;
     cursor: pointer;
     transition: 300ms;
+    a{
+      width: 30px;
+      height: 30px; 
+      display: flex;
+      align-items: center;
+      justify-self: center;
+    }
     &:hover {
       background-color: #0176ff;
       color: white;

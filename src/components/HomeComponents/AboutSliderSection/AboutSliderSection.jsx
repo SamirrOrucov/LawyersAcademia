@@ -6,7 +6,7 @@ import "./AboutSliderSection.scss";
 function AboutSliderSection() {
   return (
     <div className="aboutSliderSection">
-      <div className="headOfStatistics">
+      {/* <div className="headOfStatistics">
         <p className="factsFirst">Xəbərlər</p>
         <p className="factsSecond">
           Hər gün yeni <span>Xəbər</span> !
@@ -19,7 +19,7 @@ function AboutSliderSection() {
           <div className="line Four"></div>
           <div className="line Five"></div>
         </div>
-      </div>
+      </div> */}
       <div className="aboutSliderSection_container">
         <div className="aboutSliderSection_container_aboutSide">
           <div>
