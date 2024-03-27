@@ -6,6 +6,8 @@ import News from "./pages/News/News";
 import NewsDetail from "./pages/NewsDetail/NewsDetail";
 import Qanunvericilik from "./pages/Qanunvericilik/Qanunvericilik";
 import QanunvericilikDetail from "./pages/QanunvericilikDetail/QanunvericilikDetail";
+import ElectronLibrary from "./pages/ElectronLibrary/ElectronLibrary";
+import ElectronLibraryDetail from "./pages/ElectronLibraryDetail/ElectronLibraryDetail";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/detail/:id" element={<NewsDetail />} />
           <Route path="/qanunvericilik" element={<Qanunvericilik/>}/>
           <Route path="/qanunvericilik/detail/:id" element={<QanunvericilikDetail/>}/>
+          <Route path="/library" element={<ElectronLibrary/>}/>
+          <Route path="/library/:id" element={<ElectronLibraryDetail/>}/>
 
           </Route>
         </Routes>

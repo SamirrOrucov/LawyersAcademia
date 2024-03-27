@@ -108,7 +108,7 @@ function Navbar() {
               </li>
               <li>
                 <NavLink
-                  to="/elektronKitabxana"
+                  to="/library"
                   style={({ isActive }) => {
                     return {
                       color: isActive ? "#0176ff" : "",
@@ -227,7 +227,7 @@ function Navbar() {
             </li>
             <li>
               <NavLink
-                to="/elektronKitabxana"
+                to="/library"
                 style={({ isActive }) => {
                   return {
                     color: isActive ? "#0176ff" : "",

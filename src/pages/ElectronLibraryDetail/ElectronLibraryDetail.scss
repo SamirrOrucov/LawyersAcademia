@@ -1,0 +1,27 @@
+.libraryDetail {
+  max-width: 100%;
+  &_container {
+    max-width: 85%;
+    margin: 0 auto;
+    &_top {
+      font-size: 12px;
+      a {
+        color: #878686;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+      }
+      span {
+        font-family: "Montserrat", sans-serif;
+        color: #197fb6cb;
+        cursor: pointer;
+        font-weight: 600;
+      }
+    }
+    &_main{
+        display: flex;
+        align-content: center;
+        gap: 100px;
+        
+    }
+  }
+}
